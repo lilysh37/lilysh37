@@ -1,0 +1,53 @@
+name: Clinic Automated Testing
+
+# Когда запускать? При пуше в ветку master
+
+on:
+
+  push:
+
+    branches: [ "master" ]
+
+  pull_request:
+
+    branches: [ "master" ]
+
+jobs:
+
+  build-and-test:
+
+    runs-on: ubuntu-latest # Тесты будут идти на Linux-сервере
+
+    steps:
+
+    # 1. Скачиваем код из репозитория
+
+    - uses: actions/checkout@v3
+
+    # 2. Устанавливаем .NET (GitHub сам подберет версию или укажите 6.0/7.0/8.0)
+
+    - name: Setup .NET
+
+      uses: actions/setup-dotnet@v3
+
+      with:
+
+        dotnet-version: 8.0.x # Укажите ту версию, которую выбирали при создании проекта!
+
+    # 3. Восстанавливаем библиотеки
+
+    - name: Restore dependencies
+
+      run: dotnet restore
+
+    # 4. Собираем проект
+
+    - name: Build
+
+      run: dotnet build --no-restore
+
+    # 5. ЗАПУСКАЕМ ТЕСТЫ
+
+    - name: Test
+
+      run: dotnet test --no-build --verbosity normal

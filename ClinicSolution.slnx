@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ClinicCore.Tests/ClinicCore.Tests.csproj" />
+  <Project Path="ClinicCore/ClinicCore.csproj" />
+</Solution>

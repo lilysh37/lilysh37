@@ -8,7 +8,7 @@ namespace ClinicCore
 
     {
 
-        public string FullName { get; set; }
+        public string? FullName { get; set; }
 
         public DateTime BirthDate { get; set; }
 
@@ -35,7 +35,6 @@ namespace ClinicCore
             {
 
                 age--;
-
             }
 
             return age;

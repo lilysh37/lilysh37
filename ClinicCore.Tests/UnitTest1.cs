@@ -1,7 +1,5 @@
 ﻿using Xunit;
 
-using ClinicCore;
-
 using System;
 
 namespace ClinicCore.Tests

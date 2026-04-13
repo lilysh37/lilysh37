@@ -1,0 +1,36 @@
+site_name: Документация ClinicCore
+
+site_url: https://lilysh37.github.io/ClinicSolution-Learning/
+
+repo_url: https://github.com/lilysh37/ClinicSolution-Learning
+
+repo_name: GitHub Repo
+
+theme:
+
+  name: material # Используем современную тему Material Design
+
+  language: ru   # Включаем русский интерфейс (поиск, кнопки)
+
+  features:
+
+    - navigation.expand # Раскрывающееся меню
+
+    - content.code.copy # Кнопка копирования кода
+
+nav:
+
+  - Главная: index.md
+
+  - Руководство пользователя:
+
+      - Быстрый старт: user-guide/getting-started.md
+
+      - Словарь терминов: user-guide/glossary.md
+
+  - Разработчику:
+
+      - Архитектура: developer/architecture.md
+
+      - API: developer/api.md
+

@@ -1,5 +1,5 @@
 # Библиотека ClinicCore
-
+**Обновлено автоматически через GitHub Actions! 🚀**
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 
 Библиотека классов для управления данными пациентов клиники. Проект разработан в учебных целях для демонстрации **CI/CD** и **Unit-тестирования**.

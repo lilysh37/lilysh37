@@ -22,15 +22,28 @@ nav:
 
   - Главная: index.md
 
-  - Руководство пользователя:
+  - Руководство оператора (ГОСТ 19.505):
 
-      - Быстрый старт: user-guide/getting-started.md
+      - Титульный лист: gost/00-title.md
+      
+      - 1. Назначение программы: gost/01-purpose.md
 
-      - Словарь терминов: user-guide/glossary.md
+      - 2. Условия выполнения: gost/02-conditions.md
 
-  - Разработчику:
+      - 3. Выполнение программы: gost/03-execution.md
 
-      - Архитектура: developer/architecture.md
+      - 4. Сообщения оператору: gost/04-messages.md
 
-      - API: developer/api.md
+  - Справочник разработчика:
 
+      - API Reference: developer/api.md
+
+plugins:
+
+  - search
+
+  - print-site:
+
+      add_to_navigation: true
+
+      print_page_title: 'Печать документации (PDF)'

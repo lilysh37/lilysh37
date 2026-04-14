@@ -1,0 +1,62 @@
+<mxfile host="65bd71144e">
+    <diagram id="DEfOtnTEq8DV1s0fL0hp" name="Page-1">
+        <mxGraphModel dx="402" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Начал" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="120" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;span style=&quot;font-size:11.0pt;line-height:115%;&amp;lt;br/&amp;gt;font-family:&amp;quot;Arial&amp;quot;,sans-serif;mso-fareast-font-family:Arial;mso-ansi-language:&amp;lt;br/&amp;gt;RU;mso-fareast-language:RU;mso-bidi-language:AR-SA&quot;&gt;Получить Today&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="240" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;" edge="1" parent="1" source="4" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;span style=&quot;font-size:11.0pt;line-height:&amp;lt;br/&amp;gt;115%;font-family:&amp;quot;Arial&amp;quot;,sans-serif;mso-fareast-font-family:Arial;mso-ansi-language:&amp;lt;br/&amp;gt;EN-US;mso-fareast-language:RU;mso-bidi-language:AR-SA&quot; lang=&quot;EN-US&quot;&gt;age \u003d Today.Year -&lt;br&gt;BirthDate.Year&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="330" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="15">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="30" y="485" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="90" y="485"/>
+                            <mxPoint x="90" y="660"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="&lt;span style=&quot;font-size:11.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Arial&amp;quot;,sans-serif;mso-fareast-font-family:Arial;mso-ansi-language:&lt;br/&gt;RU;mso-fareast-language:RU;mso-bidi-language:AR-SA&quot;&gt;Был ли день рождения в этом&lt;br/&gt;году?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="430" width="140" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="10" target="15">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="390" y="660"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="&lt;span style=&quot;font-size:11.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Arial&amp;quot;,sans-serif;mso-fareast-font-family:Arial;mso-ansi-language:&lt;br/&gt;RU;mso-fareast-language:RU;mso-bidi-language:AR-SA&quot;&gt;age--&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="455" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Да" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="455" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;span style=&quot;font-size:11.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Arial&amp;quot;,sans-serif;mso-fareast-font-family:Arial;mso-ansi-language:&lt;br/&gt;RU;mso-fareast-language:RU;mso-bidi-language:AR-SA&quot;&gt;Вернуть `age`&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="620" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Н&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;ет&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="450" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

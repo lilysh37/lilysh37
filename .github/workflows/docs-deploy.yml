@@ -1,78 +1,53 @@
 name: Publish Docs to GitHub Pages
 
-# Триггер: запускать только при изменениях в папке docs или конфиге,
-
-# и только в ветке main
-
 on:
-
   push:
-
     branches:
-
       - main
-
     paths:
-
       - 'docs/**'
-
       - 'mkdocs.yml'
-
       - '.github/workflows/docs-deploy.yml'
 
 permissions:
-
-  contents: write # Разрешаем роботу писать в репозиторий
+  contents: write
 
 jobs:
-
   deploy:
-
     runs-on: ubuntu-latest
 
     steps:
-
-      # 1. Скачиваем код репозитория
-
-      - uses: actions/checkout@v4
-
-      # 2. Устанавливаем Python
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Полная история для корректного деплоя
 
       - name: Set up Python
-
         uses: actions/setup-python@v4
-
         with:
+          python-version: '3.x'
 
-          python-version: 3.x
-
-      # 3. Кэшируем pip (чтобы ускорить сборку в будущем)
-
-      - uses: actions/cache@v4
-
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
         with:
-
-          key: ${{ github.ref }}
-
-          path: .cache
-
-      # 4. Устанавливаем зависимости из нашего файла
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
       - name: Install dependencies
-
-        run: pip install -r requirements.txt
-
-      # 5. Собираем и публикуем
-
-      # Мы используем стандартную команду mkdocs, но настраиваем git-бота
-
-      - name: Deploy to GitHub Pages
-
         run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            pip install mkdocs mkdocs-material mkdocs-print-site
+          fi
 
-          git config user.name github-actions
+      - name: Build and deploy documentation
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "github-actions@github.com"
+          mkdocs gh-deploy --force --verbose
 
-          git config user.email github-actions@github.com
-
-          mkdocs gh-deploy --force
-
+      - name: Verification
+        run: echo "Documentation successfully deployed to GitHub Pages"

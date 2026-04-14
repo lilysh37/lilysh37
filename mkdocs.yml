@@ -1,8 +1,8 @@
 site_name: Документация ClinicCore
 
-site_url: https://lilysh37.github.io/ClinicSolution-Learning/
+site_url: https://lilysh37.github.io/lilysh37/
 
-repo_url: https://github.com/lilysh37/ClinicSolution-Learning
+repo_url: https://github.com/lilysh37/lilysh37
 
 repo_name: GitHub Repo
 
@@ -25,7 +25,7 @@ nav:
   - Руководство оператора (ГОСТ 19.505):
 
       - Титульный лист: gost/00-title.md
-      
+
       - 1. Назначение программы: gost/01-purpose.md
 
       - 2. Условия выполнения: gost/02-conditions.md

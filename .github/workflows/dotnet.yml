@@ -1,16 +1,16 @@
 name: Clinic Automated Testing
 
-# Когда запускать? При пуше в ветку master
+# Когда запускать? При пуше в ветку main
 
 on:
 
   push:
 
-    branches: [ "master" ]
+    branches: [ "main" ]
 
   pull_request:
 
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
 

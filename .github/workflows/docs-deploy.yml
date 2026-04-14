@@ -2,7 +2,7 @@ name: Publish Docs to GitHub Pages
 
 # Триггер: запускать только при изменениях в папке docs или конфиге,
 
-# и только в ветке master
+# и только в ветке main
 
 on:
 
@@ -10,7 +10,7 @@ on:
 
     branches:
 
-      - master
+      - main
 
     paths:
 
